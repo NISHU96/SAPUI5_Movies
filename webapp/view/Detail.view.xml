@@ -1,0 +1,26 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.movies.Movies.controller.Detail"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="Show Details" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<FlexBox wrap="Wrap" class="sapUiResponsiveMargin">
+						<l:VerticalLayout id="generalDetails" class="sapUiMediumMarginEnd sapUiSmallMarginBottom">
+							<core:Icon src="{icon}" size="3rem" class="sapUiMediumMarginBottom"/>
+							<Label text="{i18n>cinemaAddress}" design="Bold"/>
+							<Text text="{movies>cinemaAddress}" class="sapUiMediumMarginBottom"/>
+							<Label text="{i18n>special}" design="Bold"/>
+							<Text text="{movies>special}" class="sapUiMediumMarginBottom"/>
+							<Label text="{i18n>seats}" design="Bold"/>
+							<Text text="{movies>seats}" class="sapUiMediumMarginBottom"/>
+							<Label text="{i18n>technicalDetails}" design="Bold"/>
+							<Text text="{movies>technicalDetails}" width="400px"/>
+						</l:VerticalLayout>
+						<Image src="{movies>pic}" width="100%" />
+					</FlexBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</mvc:View>
